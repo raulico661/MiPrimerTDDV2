@@ -28,7 +28,7 @@ public class Test {
 		Coche nuevoCoche = new Coche();
 		nuevoCoche.velocidad = 50;
 		nuevoCoche.decelerar(80);
-		Assert.assertEquals(30, nuevoCoche.velocidad);
+		Assert.assertEquals(0, nuevoCoche.velocidad);
 	}
 
 }
