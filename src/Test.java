@@ -23,6 +23,12 @@ public class Test {
 		Assert.assertEquals(30, nuevoCoche.velocidad);
 	}
 	
-	
+	@org.junit.Test
+	public void test_decelerar_un_coche_su_velocidad_no_puede_ser_cero() {
+		Coche nuevoCoche = new Coche();
+		nuevoCoche.velocidad = 50;
+		nuevoCoche.decelerar(80);
+		Assert.assertEquals(30, nuevoCoche.velocidad);
+	}
 
 }
