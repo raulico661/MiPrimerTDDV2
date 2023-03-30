@@ -7,5 +7,12 @@ public class Test {
 		Coche nuevoCoche = new Coche();
 		Assert.assertEquals(0, nuevoCoche.velocidad);
 	}
+	
+	@org.junit.Test
+	public void test_acelerar_un_coche_su_velocidad_aumenta() {
+		Coche nuevoCoche = new Coche();
+		nuevoCoche.acelerar(30);
+		Assert.assertEquals(30, nuevoCoche.velocidad);
+	}
 
 }
