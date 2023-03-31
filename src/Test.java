@@ -3,31 +3,31 @@ import org.junit.Assert;
 public class Test {
 	
 	@org.junit.Test
-	public void test_crear_coche() {
+	public void test_crear_cocheRaulSempere() {
 		Coche nuevoCoche = new Coche();
 		Assert.assertEquals(0, nuevoCoche.velocidad);
 	}
 	
 	@org.junit.Test
-	public void test_acelerar_un_coche_su_velocidad_aumenta() {
+	public void test_acelerar_un_coche_su_velocidad_aumentaRaulSempere() {
 		Coche nuevoCoche = new Coche();
-		nuevoCoche.acelerar(30);
+		nuevoCoche.acelerarRaulSempere(30);
 		Assert.assertEquals(30, nuevoCoche.velocidad);
 	}
 	
 	@org.junit.Test
-	public void test_decelerar_un_coche_su_velocidad_disminuye() {
+	public void test_decelerar_un_coche_su_velocidad_disminuyeRaulSempere() {
 		Coche nuevoCoche = new Coche();
 		nuevoCoche.velocidad = 50;
-		nuevoCoche.decelerar(20);
+		nuevoCoche.decelerarRaulSempere(20);
 		Assert.assertEquals(30, nuevoCoche.velocidad);
 	}
 	
 	@org.junit.Test
-	public void test_decelerar_un_coche_su_velocidad_no_puede_ser_cero() {
+	public void test_decelerar_un_coche_su_velocidad_no_puede_ser_ceroRaulSempere() {
 		Coche nuevoCoche = new Coche();
 		nuevoCoche.velocidad = 50;
-		nuevoCoche.decelerar(80);
+		nuevoCoche.decelerarRaulSempere(80);
 		Assert.assertEquals(0, nuevoCoche.velocidad);
 	}
 
